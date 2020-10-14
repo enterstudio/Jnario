@@ -29,7 +29,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.10</version>
+      <version>4.13.1</version>
     </dependency>
     <dependency>
       <groupId>javax.inject</groupId>
@@ -105,8 +105,8 @@
             <phase>prepare-package</phase>
             <configuration>
               <tasks>
-                <property name="maven.project.version" value="${project.version}" />
-                <ant antfile="create-uberjar.ant" />
+                <property name="maven.project.version" value="${project.version}"/>
+                <ant antfile="create-uberjar.ant"/>
               </tasks>
             </configuration>
             <goals>
@@ -131,7 +131,7 @@
                 <artifact>
                   <file>target/org.jnario.standalone-${project.version}.jar</file>
                   <type>jar</type>
-                  <classifier></classifier>
+                  <classifier/>
                 </artifact>
                 <artifact>
                   <file>target/org.jnario.standalone-${project.version}-sources.jar</file>
