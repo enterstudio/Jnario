@@ -11,7 +11,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-    <xtend.version>2.7.0</xtend.version>
+    <xtend.version>2.32.0</xtend.version>
   </properties>
   <repositories>
     <repository>
@@ -105,8 +105,8 @@
             <phase>prepare-package</phase>
             <configuration>
               <tasks>
-                <property name="maven.project.version" value="${project.version}" />
-                <ant antfile="create-uberjar.ant" />
+                <property name="maven.project.version" value="${project.version}"/>
+                <ant antfile="create-uberjar.ant"/>
               </tasks>
             </configuration>
             <goals>
@@ -131,7 +131,7 @@
                 <artifact>
                   <file>target/org.jnario.standalone-${project.version}.jar</file>
                   <type>jar</type>
-                  <classifier></classifier>
+                  <classifier/>
                 </artifact>
                 <artifact>
                   <file>target/org.jnario.standalone-${project.version}-sources.jar</file>
